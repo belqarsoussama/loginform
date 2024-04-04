@@ -1,0 +1,19 @@
+<div fxLayoutAlign="center center" fxFlexFill class="main-div  with-background">
+  <mat-card fxFlex="25" >
+    <mat-toolbar color="warn">Login page</mat-toolbar>
+    <form fxLayoutAlign="streatch" fxLayout="column" class="loginform">
+      <mat-form-field>
+        <input matInput placeholder="Username">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Password">
+      </mat-form-field>
+      <button mat-raised-button type="submit" color="warn">Login</button>
+
+      <button mat-stroked-button type="submit" color="warn" (click)="redirectToSignup()">Sign up</button>
+
+    </form>
+
+
+  </mat-card>
+</div>

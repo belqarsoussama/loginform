@@ -1,0 +1,103 @@
+
+<div fxLayoutAlign="center center" fxFlexFill class="main-div with-background">
+  <mat-card fxFlex="50">
+    <mat-toolbar color="warn">
+      <span fxLayoutAlign="center center">Signup page</span>
+
+    </mat-toolbar>
+
+    <form *ngIf="isFormVisible" fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="center stretch" class="loginform">
+      <div fxLayout="column" fxFlex="50">
+        <mat-form-field>
+          <input matInput placeholder="Nom">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Prenom">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Telephone">
+        </mat-form-field>
+      </div>
+      <div fxLayout="column" fxFlex="50">
+        <mat-form-field>
+          <input matInput placeholder="Niveau">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Email">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Password">
+        </mat-form-field>
+      </div>
+    </form>
+    <form *ngIf="isFormVisible1" fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="center stretch" class="loginform">
+      <div fxLayout="column" fxFlex="50">
+        <mat-form-field>
+          <input matInput placeholder="Nom Prof">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Prenom">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Telephone">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Description">
+        </mat-form-field>
+
+      </div>
+      <div fxLayout="column" fxFlex="50">
+        <mat-form-field>
+          <input matInput placeholder="Niveau">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Email">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Password">
+        </mat-form-field>
+      </div>
+    </form>
+    <form *ngIf="isFormVisible2" fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="center stretch" class="loginform">
+      <div fxLayout="column" fxFlex="50">
+        <mat-form-field>
+          <input matInput placeholder="Nom centre">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="licence">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Telephone">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Adresse">
+        </mat-form-field>
+
+
+      </div>
+      <div fxLayout="column" fxFlex="50">
+
+        <mat-form-field>
+          <input matInput placeholder="Email">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Password">
+        </mat-form-field>
+
+        <mat-form-field>
+          <input matInput placeholder="Description">
+        </mat-form-field>
+      </div>
+    </form>
+    <div class="loginform" fxLayoutAlign="center">
+      <button mat-stroked-button type="submit" color="warn" (click)="redirectToLogin()">Back to Login</button>
+      <button mat-stroked-button (click)="toggleFormVisibility3()">Pour Etud</button>
+      <button mat-stroked-button (click)="toggleFormVisibility1()">Pour Prof</button>
+      <button mat-stroked-button (click)="toggleFormVisibility()">Pour Centre</button>
+      <button mat-stroked-button type="submit" color="warn">Signup here</button>
+
+
+    </div>
+  </mat-card>
+</div>
+
